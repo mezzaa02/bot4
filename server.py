@@ -606,8 +606,7 @@ def send_precio_message(sender):
     try:
         # Enviar los mensajes solicitados
         messages = [
-            """🩷 Precios *POR DOCENA*
-(si lleva 12 productos en Total) 🛒✨
+            """🩷 Puede surtir para completar sus *12 PRODUCTOS* 🛒 y llevar *cada uno* a estos precios 😊🛍️
 
 ▫️ Billeteras: *20 soles*
 ▫️👛Monederos: *15 soles*
@@ -616,9 +615,8 @@ def send_precio_message(sender):
 ▫️👜Carteras: *50 soles*
 ▫️💼Morrales: *50 soles*
 ▫️⌚️Gshock: *50 soles*
-▫️⌚️Rolex: *50 soles* 
-\nPuede surtir para completar sus *12 PRODUCTOS* 🛒 y llevar *cada uno* a estos precios 😊🛍️""",
-            "🔹¿Cuántas unidades desea llevar? 🙌☺️"
+▫️⌚️Rolex: *50 soles* """,
+            "🔹🛒 ¿Cuántas unidades desea llevar? 🙌☺️"
         ]
         for message in messages:
             send_message(sender, message)
