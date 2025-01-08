@@ -32,6 +32,7 @@ pdf_names = [
     "RELOJES de Caballero.pdf",
     "BILLETERAS de Caballero.pdf",
     "CARTERAS.pdf",
+    "CHEQUERAS de Dama.pdf",
     "BILLETERAS de Dama.pdf"
 ]
 pdf_files = [os.path.join(BASE_PATH, pdf) for pdf in pdf_names]
