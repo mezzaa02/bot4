@@ -60,7 +60,18 @@ image_files = [os.path.join(BASE_PATH, img) for img in image_names]
 
 # Mensajes de bienvenida
 welcome_messages = [
-    "👋💚 *Buenas* 🤗 \n\nSomos empresa 💼 *RUC: 20610868577* Registrada desde *1993* 🥳⭐⭐⭐⭐⭐"
+    "👋💚 *Buenas* 🤗 \n\nSomos empresa 💼 *RUC: 20610868577* Registrada desde *1993* 🥳⭐⭐⭐⭐⭐",
+    """🩷 Precios *POR DOCENA*
+(si lleva 12 productos en Total) 🛒✨
+
+▫️ Billeteras: *20 soles*
+▫️👛Monederos: *15 soles*
+▫️Correas: *30 soles* 
+▫️👝Chequeras: *30 soles*
+▫️👜Carteras: *50 soles*
+▫️💼Morrales: *50 soles*
+▫️⌚️Gshock: *50 soles*
+▫️⌚️Rolex: *50 soles*"""
     ]
 
 # Texto para el primer video
@@ -606,16 +617,7 @@ def send_precio_message(sender):
     try:
         # Enviar los mensajes solicitados
         messages = [
-            """🩷 Puede surtir para completar sus *12 PRODUCTOS* 🛒 y llevar *cada uno* a estos precios 😊🛍️
-
-▫️ Billeteras: *20 soles*
-▫️👛Monederos: *15 soles*
-▫️Correas: *30 soles* 
-▫️👝Chequeras: *30 soles*
-▫️👜Carteras: *50 soles*
-▫️💼Morrales: *50 soles*
-▫️⌚️Gshock: *50 soles*
-▫️⌚️Rolex: *50 soles* """,
+            "🩷 Puede surtir para completar sus *12 PRODUCTOS* 🛒 y llevar *cada uno* a estos precios 😊🛍️",
             "🔹🛒 ¿Cuántas unidades desea llevar? 🙌☺️"
         ]
         for message in messages:
@@ -631,9 +633,9 @@ def send_tienda_messages(sender):
     try:
         # Enviar la primera imagen con su caption
         image1_name = "tienda1.jpeg"
-        image1_caption = "📍Tenemos *TIENDA FÍSICA* en la *Zona Franca del Perú* 🚚 \n\n*Zofratacna Mz K Lote 08* 🙌🏻✨ 🤩Ciudad de *TACNA, Perú* 🇵🇪"
+        image1_caption = "🩷Tenemos nuestra *TIENDA FÍSICA* en la *Zona Franca del Perú* 🚚 \n\n*Zofratacna Mz K Lote 08* 🙌🏻✨ 🤩Ciudad de *TACNA, Perú* 🇵🇪"
         send_image(sender, image1_name, image1_caption)
-        time.sleep(2)
+        time.sleep(1.5)
 
         # Enviar la segunda imagen con su caption
         #image2_name = "tienda2.jpeg"
@@ -681,7 +683,7 @@ def send_welcome_pdfs_videos_to_client(sender):
         image4_name = "mix1.png"
         image4_caption = "💚Precios *POR DOCENA*\n▫️⌚Relojes: *50 soles*\n▫️👜Carteras: *50 soles*\n▫️💼Morrales: *50 soles*"
         send_image(sender, image4_name, image4_caption)
-        time.sleep(2)
+        time.sleep(1.5)
 
         # Enviar MIX_2
         image5_name = "mix2.png"
