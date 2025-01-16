@@ -635,7 +635,7 @@ def send_tienda_messages(sender):
         image1_name = "tienda1.jpeg"
         image1_caption = "🩷Tenemos nuestra *TIENDA FÍSICA* en la *Zona Franca del Perú* 🚚 \n\n*Zofratacna Mz K Lote 08* 🙌🏻✨ 🤩Ciudad de *TACNA, Perú* 🇵🇪"
         send_image(sender, image1_name, image1_caption)
-        time.sleep(1.5)
+        time.sleep(1)
 
         # Enviar la segunda imagen con su caption
         #image2_name = "tienda2.jpeg"
@@ -671,7 +671,7 @@ def send_welcome_pdfs_videos_to_client(sender):
         # Enviar PDFs
         for pdf_name in pdf_names:
             send_pdf(sender, pdf_name)
-            time.sleep(1.5)
+            time.sleep(1)
 
         # Enviar videos
         #for video_filename in welcome_video_files:
@@ -683,7 +683,7 @@ def send_welcome_pdfs_videos_to_client(sender):
         image4_name = "mix1.png"
         image4_caption = "💚Precios *POR DOCENA*\n▫️⌚Relojes: *50 soles*\n▫️👜Carteras: *50 soles*\n▫️💼Morrales: *50 soles*"
         send_image(sender, image4_name, image4_caption)
-        time.sleep(1.5)
+        time.sleep(1)
 
         # Enviar MIX_2
         image5_name = "mix2.png"
